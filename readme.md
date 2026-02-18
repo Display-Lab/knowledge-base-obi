@@ -50,7 +50,7 @@ Each causal pathway is described in a corresponding vignette directory.
 The knowledge base contains files on a spectrum of developmental states, from robustly functional to pre-pseudocode. Versioning of the knowledge base may implement breaking changes, and as such a registry of stable pairs are maintained by the Display-Lab team. Stable release pairs of the software pipeline and knowledge base are recorded as new versions are released, to ensure full functionality of the pipeline despite the changing nature of the knowledge base. Future versions of the knowledge base may be independent of the software pipeline's version, and may be developed for standalone uses.
 
 |Release Pair| Knowledge Base Version | Software Pipeline Version | 
-|-|-|-|
+|-|-|-| 
 | 2/12/25 | ![Knowledge-Base](https://img.shields.io/badge/version-v1.8-blue) | ![SCAFFOLD](https://img.shields.io/badge/version-v2.1-blue) |
 
 
