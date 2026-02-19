@@ -8,7 +8,7 @@
     "@type": "koio:KnowledgeObject",
     "dc:title": "Precision Feedback Knowledge Base",
     "dc:identifier": "ark:PrecisionFeedbackKnowledgeBase (PFKB)",
-    "dc:version": "v1.6",
+    "dc:version": "v3.1",
     "dc:date": "2024-12-14",
     "dc:description": "PFKB is a collection of computable biomedical knowledge for the purpose of processing clinical performance data to identify coaching and appreciation feedback messages that may represent the highest-value performance information an organization has for healthcare professionals to learn to improve and sustain their clinical performance.",
     "schema:creator": {
@@ -22,6 +22,7 @@
     "dc:license": {
         "@id": "LICENSE.txt"
     },
+    "dc:source": "https://github.com/Display-Lab/knowledge-base-obi",
     "koio:hasKnowledge": [
         {
             "@id": "causal_pathways",
@@ -29,29 +30,20 @@
                 "koio:Knowledge",
                 "cpo_causal_pathway"
             ],
-            "dc:description": "These are the causal pathways. Please refer to the manifest.yamal for detail.",
-            "implementedBy": {
-                "@id": "causal_pathways",
-                "@type": "schema:Dataset",
-                "dc:title": "Causal pathways"
-            },
-            "schema:creator": {
-                "@type": "schema:Organization",
-                "schema:name": "DISPLAY Lab"
-            }
-        },
-        {
-            "@id": "message_templates",
-            "@type": [
-                "koio:Knowledge",
-                "psdo_performance_summary_display_template"
+            "dc:description": "These are the causal pathways. Please refer to the manifest.yaml for detail.",
+            "implementedBy": [
+                {
+                    "@id": "https://github.com/Display-Lab/knowledge-base-obi/tree/v1.6/causal_pathways",
+                    "@type": "schema:Dataset",
+                    "dc:title": "General causal pathways"
+                },
+                {
+                    "@id": "causal_pathways",
+                    "@type": "schema:Dataset",
+                    "dc:title": "Causal pathways"
+                }
             ],
-            "dc:description": "These are the message templates. Please refer to the manifest.yamal for detail.",
-            "implementedBy": {
-                "@id": "message_templates",
-                "@type": "schema:Dataset",
-                "dc:title": "Message templates"
-            },
+            "dependsOn": "manifest",
             "schema:creator": {
                 "@type": "schema:Organization",
                 "schema:name": "DISPLAY Lab"
@@ -65,6 +57,31 @@
                 "@id": "manifest.yaml",
                 "@type": "schema:MediaObject"
             },
+            "schema:creator": {
+                "@type": "schema:Organization",
+                "schema:name": "DISPLAY Lab"
+            }
+        },
+        {
+            "@id": "message_templates",
+            "@type": [
+                "koio:Knowledge",
+                "psdo_performance_summary_display_template"
+            ],
+            "dc:description": "These are the message templates. Please refer to the manifest.yamal for detail.",
+            "implementedBy": [
+                {
+                    "@id": "https://github.com/Display-Lab/knowledge-base-obi/tree/v1.6/message_templates",
+                    "@type": "schema:Dataset",
+                    "dc:title": "General message templates"
+                },
+                {
+                    "@id": "message_templates",
+                    "@type": "schema:Dataset",
+                    "dc:title": "Message templates"
+                }
+            ],
+            "dependsOn": "manifest",
             "schema:creator": {
                 "@type": "schema:Organization",
                 "schema:name": "DISPLAY Lab"
@@ -134,12 +151,6 @@
         }
     ],
     "koio:hasDocumentation": [
-        {
-            "@id": "vignettes",
-            "@type": "InformationArtifact",
-            "dc:title": "Vignettes for the Precision Feedback Knowledge Base",
-            "dc:description": "The Precision Feedback Knowledge Base has a collection of vignettes that illustrate how the knowledge base can be used by a precision feedback system to prioritize motivating performance information and tailor feedback messages. Each vignette uses a fictional context and providers, called personas, who are representative of some population of providers. The vignette includes narrative description of the function of a precision feedback system, as well as computer-interpretable code and files that can be used to test out the function of the precision feedback system. The narrative part of each vignette is written for clinical feedback system stakeholders, focusing primarily on a researchers and feedback system developers for feedback systems in health care organizations. The purpose of the vignettes is also to increase the findability and transparency of the precision feedback system software to all stakeholders, including healthcare professionals, patients, and communities."
-        },
         {
             "@id": "readme.md",
             "@type": "InformationArtifact",

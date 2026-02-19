@@ -32,391 +32,216 @@
       "name": "DisplayLab"
     }
   },
-  "slowmo:IsAboutMeasure": [
+  "slowmo:IsAboutMeasure": [    
     {
-      "@id": "_:ABX01",
+      "@id": "_:ces",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "ABX-01-OB: Antibiotic Timing for Cesarean Delivery",
-      "identifier": "ABX01",
+      "dc:title": "NTSV cesareans",
+      "identifier": "ces",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
+    },
+    {
+      "@id": "_:ces_dystocia",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "unplanned NTSV cesareans for dystocia",
+      "identifier": "ces_dystocia",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
+    },
+    {
+      "@id": "_:ces_fht",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "unplanned NTSV cesareans for abnormal/indeterminate FHT",
+      "identifier": "ces_fht",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
+    },
+    {
+      "@id": "_:ces_matreq",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "unplanned NTSV cesareans for maternal request",
+      "identifier": "ces_matreq",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
+    },
+    {
+      "@id": "_:ces_other",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "unplanned NTSV cesareans with primary indication other than dystocia, abnormal/indeterminate FHT, or maternal request",
+      "identifier": "ces_other",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
+    },
+    {
+      "@id": "_:ces_planned",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "planned NTSV cesareans",
+      "identifier": "ces_planned",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
+    },
+    {
+      "@id": "_:cat2",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "NTSV cesareans for category II fetal heart tones that have documentation of use of an algorithm or checklist",
+      "identifier": "cat2",
       "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
     },
     {
-      "@id": "_:ABX02",
+      "@id": "_:dys_comp",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "ABX-02-C: Antibiotic Timing, Open Cardiac",
-      "identifier": "ABX02",
+      "dc:title": "NTSV cesareans performed for dystocia that meet national criteria for dystocia",
+      "identifier": "dys_comp",
       "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
     },
     {
-      "@id": "_:ABX03",
+      "@id": "_:active_arrest_comp",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "ABX-03-C: Antibiotic Re-dosing, Open Cardiac",
-      "identifier": "ABX03",
+      "dc:title": "NTSV cesareans performed for dystocia - active phase arrest that meet national criteria for dystocia",
+      "identifier": "active_arrest_comp",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
+    },
+    {
+      "@id": "_:arrest_descent_comp",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "NTSV cesareans performed for dystocia - arrest of descent that meet national criteria for dystocia",
+      "identifier": "arrest_descent_comp",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
+    },
+    {
+      "@id": "_:failed_induction_comp",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "NTSV cesareans performed for dystocia - failed induction of labor that meet national criteria for dystocia",
+      "identifier": "failed_induction_comp",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
+    },
+    {
+      "@id": "_:latent_phase_arrest_comp",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "NTSV cesareans performed for dystocia - latent phase arrest that meet national criteria for dystocia",
+      "identifier": "latent_phase_arrest_comp",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
+    },
+    {
+      "@id": "_:spontaneous_labor",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "NTSV cesareans admitted in spontaneous labor",
+      "identifier": "spontaneous_labor",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
+    },
+    {
+      "@id": "_:medical_induction",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "NTSV cesareans  admitted for a medical induction",
+      "identifier": "medical_induction",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
+    },
+    {
+      "@id": "_:elective_induction",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "# of NTSV cesareans admitted for an elective induction",
+      "identifier": "elective_induction",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
+    },
+    {
+      "@id": "_:ytd_ces",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "NTSV cesareans (year-to-date)",
+      "identifier": "ytd_ces",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
+    },
+    {
+      "@id": "_:ytd_ces_dystocia",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "unplanned NTSV cesareans for dystocia (year-to-date)",
+      "identifier": "ytd_ces_dystocia",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
+    },
+    {
+      "@id": "_:ytd_ces_fht",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "unplanned NTSV cesareans for abnormal/indeterminate FHT (year-to-date)",
+      "identifier": "ytd_ces_fht",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
+    },
+    {
+      "@id": "_:ytd_ces_matreq",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "unplanned NTSV cesareans for maternal request (year-to-date)",
+      "identifier": "ytd_ces_matreq",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
+    },
+    {
+      "@id": "_:ytd_ces_other",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "unplanned NTSV cesareans with primary indication other than dystocia, abnormal/indeterminate FHT, or maternal request (year-to-date)",
+      "identifier": "ytd_ces_other",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
+    },
+    {
+      "@id": "_:ytd_ces_planned",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "planned NTSV cesareans (year-to-date)",
+      "identifier": "ytd_ces_planned",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
+    },
+    {
+      "@id": "_:ytd_cat2",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "NTSV cesareans for category II fetal heart tones that have documentation of use of an algorithm or checklist (year-to-date)",
+      "identifier": "ytd_cat2",
       "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
     },
     {
-      "@id": "_:BRAIN01",
+      "@id": "_:ytd_dys_comp",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "BRAIN-01: Benzodiazepine use in the geriatric population",
-      "identifier": "BRAIN01",
+      "dc:title": "NTSV cesareans performed for dystocia that meet national criteria for dystocia (year-to-date)",
+      "identifier": "ytd_dys_comp",
       "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
     },
     {
-      "@id": "_:BP01",
+      "@id": "_:ytd_active_arrest_comp",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "BP-01: Low MAP Prevention < 55 (20 minutes)",
-      "identifier": "BP01",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
+      "dc:title": "NTSV cesareans performed for dystocia - active phase arrest that meet national criteria for dystocia (year-to-date)",
+      "identifier": "ytd_active_arrest_comp",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
     },
     {
-      "@id": "_:BP02",
+      "@id": "_:ytd_arrest_descent_comp",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "BP-02: Avoiding Monitoring Gaps",
-      "identifier": "BP02",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
+      "dc:title": "NTSV cesareans performed for dystocia - arrest of descent that meet national criteria for dystocia (year-to-date)",
+      "identifier": "ytd_arrest_descent_comp",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
     },
     {
-      "@id": "_:BP03",
+      "@id": "_:ytd_failed_induction_comp",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "BP-03: Low MAP Prevention < 65 (15 minutes)",
-      "identifier": "BP03",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
+      "dc:title": "NTSV cesareans performed for dystocia - failed induction of labor that meet national criteria for dystocia (year-to-date)",
+      "identifier": "ytd_failed_induction_comp",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
     },
     {
-      "@id": "_:BP04",
+      "@id": "_:ytd_latent_phase_arrest_comp",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "BP-04-OB: SBP < 90 in Cesarean Deliveries",
-      "identifier": "BP04",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
+      "dc:title": "NTSV cesareans performed for dystocia - latent phase arrest that meet national criteria for dystocia (year-to-date)",
+      "identifier": "ytd_latent_phase_arrest_comp",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
     },
     {
-      "@id": "_:BP05",
+      "@id": "_:ytd_spontaneous_labor",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "BP-05: Low MAP Avoidance < 55, Induction",
-      "identifier": "BP05",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
+      "dc:title": "NTSV cesareans admitted in spontaneous labor (year-to-date)",
+      "identifier": "ytd_spontaneous_labor",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
     },
     {
-      "@id": "_:BP06",
+      "@id": "_:ytd_medical_induction",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "BP-06: Low MAP Prevention < 55 (10 minutes)",
-      "identifier": "BP06",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
+      "dc:title": "NTSV cesareans  admitted for a medical induction (year-to-date)",
+      "identifier": "ytd_medical_induction",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
     },
     {
-      "@id": "_:FLUID01",
+      "@id": "_:ytd_elective_induction",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "FLUID-01-C: Minimizing Colloid Use, Cardiac",
-      "identifier": "FLUID01",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:FLUID01NC",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "FLUID-01-NC: Minimizing Colloid Use, Non-Cardiac",
-      "identifier": "FLUID01_NC",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:FLUID02",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "FLUID-02-NC: Minimizing Colloid Use, Pediatrics (Non-Cardiac)",
-      "identifier": "FLUID02",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:FLUID02_C",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "FLUID-02-Peds-C: Minimizing Colloid Use, Pediatrics (Cardiac)",
-      "identifier": "FLUID02_C",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:GLU01",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "GLU-01: Hyperglycemia Management, Intraop (>200mg/dL)",
-      "identifier": "GLU01",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:GLU02",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "GLU-02: Hypoglycemia Management, Intraop (<60 mg/dL)",
-      "identifier": "GLU02",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:GLU03",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "GLU-03: Hyperglycemia Management, Periop (>200 mg/dL)",
-      "identifier": "GLU03",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:GLU04",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "GLU-04: Hypoglycemia Management, Periop (<60 mg/dL)",
-      "identifier": "GLU04",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:GLU05",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "GLU-05: Hyperglycemia Treatment, Periop (>200 mg/dL)",
-      "identifier": "GLU05",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:GLU06",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "GLU-06-C: Hyperglycemia Management, Open Cardiac (>180 mg/dL)",
-      "identifier": "GLU06",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:GLU08",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "GLU-08-C: Hyperglycemia Treatment, Open Cardiac (>180mg/dL)",
-      "identifier": "GLU08",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:GLU09",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "GLU-09: Hyperglycemia Management, Intraop (>180mg/dL)",
-      "identifier": "GLU09",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:GLU10",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "GLU-10: Hyperglycemia Management, Periop (>180mg/dL)",
-      "identifier": "GLU10",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:GLU11",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "GLU-11: Hyperglycemia Treatment, Periop (>180 mg/dL)",
-      "identifier": "GLU11",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:GLU12",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "GLU-12: Hypoglycemia Management, Intraop (<70mg/dL)",
-      "identifier": "GLU12",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:GLU13",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "GLU-13: Hypoglycemia Management, Periop (<70mg/dL)",
-      "identifier": "GLU13",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:NMB01",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "NMB-01: Train of Four Taken",
-      "identifier": "NMB01",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:NMB02",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "NMB-02: Reversal Administered",
-      "identifier": "NMB02",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:NMB03",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "NMB-03-Peds: NMB Dosing, Pediatrics",
-      "identifier": "NMB03",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:OPIOID",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "OPIOID: Opioid Equivalency",
-      "identifier": "OPIOID",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:PAIN01",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "PAIN-01-Peds: Multimodal Analgesia, Pediatrics",
-      "identifier": "PAIN01",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:PAIN02",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "PAIN-02: Multimodal Analgesia",
-      "identifier": "PAIN02",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:PONV01",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "PONV-01: PONV Prophylaxis: Adults (Old)",
-      "identifier": "PONV01",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:PONV04",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "PONV-04-Peds: PONV Prophylaxis: Pediatrics",
-      "identifier": "PONV04",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:PONV05",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "PONV-05: PONV Prophylaxis: Adults",
-      "identifier": "PONV05",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:PUL01",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "PUL-01: Protective Tidal Volume, 10 mL/kg PBW",
-      "identifier": "PUL01",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:PUL02",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "PUL-02: Protective Tidal Volume, 8 mL/kg PBW",
-      "identifier": "PUL02",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:PUL03",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "PUL-03: Administration of PEEP",
-      "identifier": "PUL03",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:SMOK01",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "SMOK-01: Smoking Tobacco Status Documentation",
-      "identifier": "SMOK01",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:SMOK02",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "SMOK-02: Smoking Tobacco Cessation Intervention",
-      "identifier": "SMOK02",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:SUS01",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "SUS-01: Fresh Gas Flow, less than or equal to 3L/min",
-      "identifier": "SUS01",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:SUS02",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "SUS-02: Global Warming Footprint, Maintenance",
-      "identifier": "SUS02",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:SUS03",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "SUS-03: Global Warming Footprint, Induction",
-      "identifier": "SUS03",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:SUS04",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "SUS-04: Fresh Gas Flow, less than or equal to 2L/min",
-      "identifier": "SUS04",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:SUS05",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "SUS-05-Peds: Nitrous Avoided, Induction",
-      "identifier": "SUS05",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:SUS06",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "SUS-06-Peds: Low Fresh Gas Flow, Pediatric Induction",
-      "identifier": "SUS06",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:SUS07",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "SUS-07: Nitrous Oxide Avoided",
-      "identifier": "SUS07",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:TEMP01",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "TEMP-01: Thermoregulation Vigilance - Active Warming",
-      "identifier": "TEMP01",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:TEMP02",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "TEMP-02: Thermoregulation Monitoring - Core Temperature",
-      "identifier": "TEMP02",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:TEMP04",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "TEMP-04-Peds: Intraoperative Normothermia, Pediatrics",
-      "identifier": "TEMP04",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:TOC01",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "TOC-01: Transfer of Care- Intraoperative",
-      "identifier": "TOC01",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:TOC02",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "TOC-02: Transfer of Care to PACU (Postop)",
-      "identifier": "TOC02",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:TOC03",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "TOC-03: Transfer of Care to ICU (Postop)",
-      "identifier": "TOC03",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:TRAN01",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "TRAN-01: Transfusion Management Vigilance",
-      "identifier": "TRAN01",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
-      "@id": "_:TRAN03",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "TRAN-03-Peds: Transfusion Vigilance, Pediatrics",
-      "identifier": "TRAN03",
-        "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
+      "dc:title": "# of NTSV cesareans admitted for an elective induction (year-to-date)",
+      "identifier": "ytd_elective_induction",
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
     }
   ]
 }

@@ -1,0 +1,1 @@
+prepare_obi_data.py is used to transform raw data provided by OBI into SCAFFOLD's required data ingestion model
