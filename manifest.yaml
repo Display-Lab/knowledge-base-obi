@@ -7,10 +7,8 @@ message_templates/:
   - performance_improving.json
   - reached_goal.json
   - above_goal.json
-  - below_peer_average_decreasing.json
   - getting_worse_decreasing.json
   - opportunity_to_improve_goal_decreasing.json
-  - opportunity_to_improve_peer_average_decreasing.json
   - performance_improving_decreasing.json
 
 causal_pathways/: 
@@ -21,6 +19,7 @@ causal_pathways/:
   - goal_better.json
   - improving.json
   - worsening.json
+  
 performance_measures/: 
   - measures.json
 .: 
