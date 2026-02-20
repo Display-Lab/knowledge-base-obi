@@ -10,6 +10,7 @@ message_templates/:
   - getting_worse_decreasing.json
   - opportunity_to_improve_goal_decreasing.json
   - performance_improving_decreasing.json
+  - below_goal.json
 
 causal_pathways/: 
   - goal_approach.json

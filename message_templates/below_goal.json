@@ -39,24 +39,23 @@
     "is_about": "http://purl.obolibrary.org/obo/IAO_0000136",
     "Name": "https://schema.metadatacenter.org/properties/26450fa6-bb2c-4126-8229-79efda7f863a",
     "Message text": "https://schema.metadatacenter.org/properties/6b9dfdf9-9c8a-4d85-8684-a24bee4b85a8",
-    "Short message ID": "https://schema.metadatacenter.org/properties/cd6dcfc0-9083-4a73-bf7e-fd310b238bd6",
-    "Additional message text": "https://schema.metadatacenter.org/properties/df7c7ba0-07dd-4930-aad6-62e1ca9dd6fa",
     "Default display": "https://schema.metadatacenter.org/properties/5b4f16a9-feb7-4724-8741-2739d8808760",
     "has_causal_pathway": "http://purl.obolibrary.org/obo/cpo_0000056"
+
   },
   "@type": "http://data.bioontology.org/ontologies/PSDO/classes/http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPSDO_0000002",
   "is_about": [
+    {
+      "@id": "http://purl.obolibrary.org/obo/PSDO_0000094",
+      "rdfs:label": "goal comparator content"
+    },
     {
       "@id": "http://purl.obolibrary.org/obo/PSDO_0000117",
       "rdfs:label": "positive performance gap set"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/PSDO_0000045",
-      "rdfs:label": "social comparator element"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/PSDO_0000126",
-      "rdfs:label": "peer average comparator"
+      "@id": "http://purl.obolibrary.org/obo/PSDO_0000046",
+      "rdfs:label": "goal comparator element"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/PSDO_0000042",
@@ -65,34 +64,34 @@
   ],
   "has_causal_pathway": 
   {
-    "@id": "https://repo.metadatacenter.org/template-instances/8302e75d-ab21-4613-b94a-89c0eaf54c39",
-    "schema:name": "Social Better"
+    "@id": "https://repo.metadatacenter.org/template-instances/deb62b84-bd40-4729-84ca-bf099cc2c07x4k",
+    "schema:name": "Goal Better"
   },
   "Name": {
-    "@value": "Below Peer Average"
+    "@value": "Below Goal (d)"
   },
   "Message text": [
     {
-      "@value": "You are below peer average this month for the measure [measure name]. Your performance was [recipient performance level] and the peer average benchmark was [comparator performance level]."
+      "@value": "Congratulations, your performance is below the target this month for the measure [measure name]! Your performance was [recipient performance level]."
     }
   ],
+  "schema:isBasedOn": "https://repo.metadatacenter.org/templates/707d3573-8ac9-4e2c-b53b-2026a795308c",
+  "schema:name": "Below Goal (d)",
+  "schema:description": "specification for a possible precision feedback message",
+  "pav:createdOn": "2026-02-20T15:24:18-07:00",
+  "pav:createdBy": "https://metadatacenter.org/users/da882240-ad9e-42ea-a48b-215e54161adx4k",
+  "pav:lastUpdatedOn": "2026-02-20T15:57:51-07:00",
+  "oslc:modifiedBy": "https://metadatacenter.org/users/da882240-ad9e-42ea-a48b-215e54161adx4k",
+  "@id": "https://repo.metadatacenter.org/template-instances/3e7b9c12-8f4a-4d6e-b2c9-1a5f7e3d8c64",
 
   "Short message ID": {
-    "@value": "30",
+    "@value": "13",
     "@type": "xsd:decimal"
   },
   "Additional message text": {
     "@value": null
   },
   "Default display": {
-    "@value": "bar chart"
-  },
-  "schema:isBasedOn": "https://repo.metadatacenter.org/templates/707d3573-8ac9-4e2c-b53b-2026a795308c",
-  "schema:name": "Below Peer Average",
-  "schema:description": "specification for a possible precision feedback message",
-  "pav:createdOn": "2025-01-14T12:10:12-08:00",
-  "pav:createdBy": "https://metadatacenter.org/users/da882240-ad9e-42ea-a48b-215e54161ad3",
-  "pav:lastUpdatedOn": "2025-01-14T12:10:12-08:00",
-  "oslc:modifiedBy": "https://metadatacenter.org/users/da882240-ad9e-42ea-a48b-215e54161ad3",
-  "@id": "https://repo.metadatacenter.org/template-instances/c5a1e2d7-8b4f-4c6a-9e21-6f0a3d9b7c42"
+    "@value": "line chart"
+  }
 }
