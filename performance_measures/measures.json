@@ -76,13 +76,6 @@
       "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
     },
     {
-      "@id": "_:cat2",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "NTSV cesareans for category II fetal heart tones that have documentation of use of an algorithm or checklist",
-      "identifier": "cat2",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
       "@id": "_:dys_comp",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
       "dc:title": "NTSV cesareans performed for dystocia that meet national criteria for dystocia",
@@ -94,50 +87,22 @@
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
       "dc:title": "NTSV cesareans performed for dystocia - active phase arrest that meet national criteria for dystocia",
       "identifier": "active_arrest_comp",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
     },
     {
       "@id": "_:arrest_descent_comp",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
       "dc:title": "NTSV cesareans performed for dystocia - arrest of descent that meet national criteria for dystocia",
       "identifier": "arrest_descent_comp",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
     },
     {
       "@id": "_:failed_induction_comp",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
       "dc:title": "NTSV cesareans performed for dystocia - failed induction of labor that meet national criteria for dystocia",
       "identifier": "failed_induction_comp",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
-    },
-    {
-      "@id": "_:latent_phase_arrest_comp",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "NTSV cesareans performed for dystocia - latent phase arrest that meet national criteria for dystocia",
-      "identifier": "latent_phase_arrest_comp",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
-    },
-    {
-      "@id": "_:spontaneous_labor",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "NTSV cesareans admitted in spontaneous labor",
-      "identifier": "spontaneous_labor",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
-    },
-    {
-      "@id": "_:medical_induction",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "NTSV cesareans  admitted for a medical induction",
-      "identifier": "medical_induction",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
-    },
-    {
-      "@id": "_:elective_induction",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "# of NTSV cesareans admitted for an elective induction",
-      "identifier": "elective_induction",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
-    },
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
+    },    
     {
       "@id": "_:ytd_ces",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
@@ -181,13 +146,6 @@
       "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
     },
     {
-      "@id": "_:ytd_cat2",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "NTSV cesareans for category II fetal heart tones that have documentation of use of an algorithm or checklist (year-to-date)",
-      "identifier": "ytd_cat2",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
-    },
-    {
       "@id": "_:ytd_dys_comp",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
       "dc:title": "NTSV cesareans performed for dystocia that meet national criteria for dystocia (year-to-date)",
@@ -199,49 +157,21 @@
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
       "dc:title": "NTSV cesareans performed for dystocia - active phase arrest that meet national criteria for dystocia (year-to-date)",
       "identifier": "ytd_active_arrest_comp",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
     },
     {
       "@id": "_:ytd_arrest_descent_comp",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
       "dc:title": "NTSV cesareans performed for dystocia - arrest of descent that meet national criteria for dystocia (year-to-date)",
       "identifier": "ytd_arrest_descent_comp",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
     },
     {
       "@id": "_:ytd_failed_induction_comp",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
       "dc:title": "NTSV cesareans performed for dystocia - failed induction of labor that meet national criteria for dystocia (year-to-date)",
       "identifier": "ytd_failed_induction_comp",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
-    },
-    {
-      "@id": "_:ytd_latent_phase_arrest_comp",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "NTSV cesareans performed for dystocia - latent phase arrest that meet national criteria for dystocia (year-to-date)",
-      "identifier": "ytd_latent_phase_arrest_comp",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
-    },
-    {
-      "@id": "_:ytd_spontaneous_labor",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "NTSV cesareans admitted in spontaneous labor (year-to-date)",
-      "identifier": "ytd_spontaneous_labor",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
-    },
-    {
-      "@id": "_:ytd_medical_induction",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "NTSV cesareans  admitted for a medical induction (year-to-date)",
-      "identifier": "ytd_medical_induction",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
-    },
-    {
-      "@id": "_:ytd_elective_induction",
-      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-      "dc:title": "# of NTSV cesareans admitted for an elective induction (year-to-date)",
-      "identifier": "ytd_elective_induction",
-      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000042"
+      "has_desired_direction": "http://purl.obolibrary.org/obo/PSDO_0000039"
     }
   ]
 }
